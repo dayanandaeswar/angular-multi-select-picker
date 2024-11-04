@@ -1,11 +1,20 @@
 <main class="main">
   <div class="content">
+    <!-- Single Slot Projection -->
     <app-single-slot-projection>
       <span>Content Projection Example</span>
     </app-single-slot-projection>
+
+    <!-- Multi Slot Projection -->
     <app-multi-select-picker>
+
+      <!-- card-title section -->
       <ng-container card-title>Multi Select Picker</ng-container>
+
+      <!-- card-subtitle section -->
       <ng-container card-subtitle>Selected Items Count: {{targetItems.length}}</ng-container>
+
+      <!-- source-items section -->
       <ng-container source-items>
         <mat-card class="source_items">
           <mat-card-content>
@@ -20,6 +29,8 @@
           </mat-card-content>
         </mat-card>
       </ng-container>
+
+      <!-- action-items section -->
       <ng-container action-items>
         <mat-card class="action_items">
           <mat-card-content class="action_buttons_container">
@@ -39,6 +50,8 @@
           </mat-card-content>
         </mat-card>
       </ng-container>
+
+      <!-- target-items section -->
       <ng-container target-items>
         <mat-card class="target_items">
           <mat-card-content>
