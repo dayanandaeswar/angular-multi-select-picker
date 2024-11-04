@@ -1,9 +1,9 @@
 <main class="main">
   <div class="content">
     <app-multi-select-picker>
-      <ng-content card-title>Multi Select Picker</ng-content>
-      <ng-content card-subtitle>Selected Items Count: {{targetItems.length}}</ng-content>
-      <ng-content source-items>
+      <ng-container card-title>Multi Select Picker</ng-container>
+      <ng-container card-subtitle>Selected Items Count: {{targetItems.length}}</ng-container>
+      <ng-container source-items>
         <mat-card class="source_items">
           <mat-card-content>
             <mat-list role="list">
@@ -16,8 +16,8 @@
             </mat-list>
           </mat-card-content>
         </mat-card>
-      </ng-content>
-      <ng-content action-items>
+      </ng-container>
+      <ng-container action-items>
         <mat-card class="action_items">
           <mat-card-content class="action_buttons_container">
             <button mat-icon-button class="action_buttons" (click)="moveAll('right')">
@@ -34,8 +34,8 @@
             </button>
           </mat-card-content>
         </mat-card>
-      </ng-content>
-      <ng-content target-items>
+      </ng-container>
+      <ng-container target-items>
         <mat-card class="target_items">
           <mat-card-content>
             <mat-list role="list">
@@ -48,7 +48,7 @@
             </mat-list>
           </mat-card-content>
         </mat-card>
-      </ng-content>
+      </ng-container>
     </app-multi-select-picker>
   </div>
 </main>
