@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.selectable_item:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.selected_item {
+    background-color: cadetblue;
+}
+
+
+
+.list_builder {
+    display: flex;
+    max-width: 60rem;
+
+    .source_items {
+        height: 400px;
+        width: 45%;
+        overflow: auto;
+        background-color: white;
+    }
+
+    .target_items {
+        height: 400px;
+        width: 45%;
+        overflow: auto;
+        background-color: white;
+    }
+
+    .action_items {
+        width: 10%;
+        background-color: white;
+        margin: 0 2rem;
+    }
+
+    .selected_item {
+        background-color: cadetblue;
+    }
+
+    .action_buttons_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .action_buttons {
+            margin: 25px 0px;
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .list_builder {
+        flex-direction: column;
+    }
+}
