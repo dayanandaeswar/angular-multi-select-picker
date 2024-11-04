@@ -1,5 +1,8 @@
 <main class="main">
   <div class="content">
+    <app-single-slot-projection>
+      <span>Content Projection Example</span>
+    </app-single-slot-projection>
     <app-multi-select-picker>
       <ng-container card-title>Multi Select Picker</ng-container>
       <ng-container card-subtitle>Selected Items Count: {{targetItems.length}}</ng-container>
@@ -21,7 +24,8 @@
         <mat-card class="action_items">
           <mat-card-content class="action_buttons_container">
             <button mat-icon-button class="action_buttons" (click)="moveAll('right')">
-              <mat-icon aria-hidden="false" aria-label="Move Right" fontIcon="keyboard_double_arrow_right"></mat-icon>
+              <mat-icon aria-hidden="false" aria-label="Move All Right"
+                fontIcon="keyboard_double_arrow_right"></mat-icon>
             </button>
             <button mat-icon-button class="action_buttons" (click)="moveSelected('right')">
               <mat-icon aria-hidden="false" aria-label="Move Right" fontIcon="chevron_right"></mat-icon>
@@ -30,7 +34,7 @@
               <mat-icon aria-hidden="false" aria-label="Move Left" fontIcon="chevron_left"></mat-icon>
             </button>
             <button mat-icon-button class="action_buttons" (click)="moveAll('left')">
-              <mat-icon aria-hidden="false" aria-label="Move Left" fontIcon="keyboard_double_arrow_left"></mat-icon>
+              <mat-icon aria-hidden="false" aria-label="Move All Left" fontIcon="keyboard_double_arrow_left"></mat-icon>
             </button>
           </mat-card-content>
         </mat-card>
